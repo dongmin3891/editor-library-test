@@ -127,7 +127,14 @@ const QuillEditor: React.FC<QuillEditorProps> = ({ value, onChange, placeholder 
                 .ql-editor img {
                     max-width: 100%;
                     height: auto;
-                    cursor: grab; /* 드래그 가능 표시 */
+                    cursor: grab;
+                    display: inline-block !important;
+                    vertical-align: middle;
+                    margin: 0 5px;
+                }
+                .ql-editor p {
+                    display: inline-block;
+                    margin: 0;
                 }
             `}</style>
             <div className="border border-gray-300 rounded-lg overflow-hidden">

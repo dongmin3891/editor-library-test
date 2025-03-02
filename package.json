@@ -1,34 +1,36 @@
 {
-  "name": "editor-library-test",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@toast-ui/editor": "^3.2.2",
-    "@xeger/quill-image-actions": "^0.7.2",
-    "@xeger/quill-image-formats": "^0.7.2",
-    "next": "14.0.4",
-    "quill": "^2.0.3",
-    "quill-image-resize-module": "^3.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-quill": "^2.0.0"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.16",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5",
-    "typescript": "^5"
-  }
+    "name": "editor-library-test",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "export": "next export",
+        "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages"
+    },
+    "dependencies": {
+        "@toast-ui/editor": "^3.2.2",
+        "@xeger/quill-image-actions": "^0.7.2",
+        "@xeger/quill-image-formats": "^0.7.2",
+        "next": "14.0.4",
+        "quill": "^2.0.3",
+        "quill-image-resize-module": "^3.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-quill": "^2.0.0"
+    },
+    "devDependencies": {
+        "@eslint/eslintrc": "^3",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "autoprefixer": "^10.4.16",
+        "eslint": "^8",
+        "eslint-config-next": "14.0.4",
+        "postcss": "^8.4.31",
+        "tailwindcss": "^3.3.5",
+        "typescript": "^5"
+    }
 }
